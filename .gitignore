@@ -1,0 +1,54 @@
+# Python
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# Node
+node_modules/
+frontend/node_modules/
+frontend/dist/
+dist/
+
+# SQLite & App Data
+*.db
+*.sqlite3
+minios.db
+
+# Storage & Reports
+storage/uploads/*
+!storage/uploads/.gitkeep
+storage/processed/*
+!storage/processed/.gitkeep
+reports/*
+!reports/.gitkeep
+
+# OS / IDE
+.DS_Store
+.vscode/
+.idea/
+
+cat > .gitignore <<'EOF'
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+*.db
+*.sqlite
+*.sqlite3
+.DS_Store
+storage/uploads/*
+storage/processed/*
+reports/*
+!storage/uploads/.gitkeep
+!storage/processed/.gitkeep
+!reports/.gitkeep
+EOF
